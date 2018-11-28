@@ -3,8 +3,8 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 14
-  productGUID: 00000000000000000000000000000000
+  serializedVersion: 15
+  productGUID: 4c598c0a0f823b449be4d9b836fbef09
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -239,7 +239,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileID: 
   appleEnableAutomaticSigning: 0
   clonedFromGUID: 73ccd88e2b44d4ceda2270d737a3797f
-  AndroidTargetDevice: 3
+  AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
@@ -416,6 +416,7 @@ PlayerSettings:
   switchAllowsVideoCapturing: 1
   switchAllowsRuntimeAddOnContentInstall: 0
   switchDataLossConfirmation: 0
+  switchUserAccountLockEnabled: 0
   switchSupportedNpadStyles: 3
   switchSocketConfigEnabled: 0
   switchTcpInitialSendBufferSize: 32
@@ -573,11 +574,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: VuforiaHoloLens
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 007eb5f93ba6d501
   metroApplicationDescription: VuforiaHoloLens
   wsaImages: {}
   metroTileShortName: 
@@ -594,8 +595,12 @@ PlayerSettings:
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:
-      InternetClient: True
+      HumanInterfaceDevice: False
+      InternetClient: False
+      InternetClientServer: True
       Microphone: True
+      PrivateNetworkClientServer: True
+      SpatialPerception: True
       WebCam: True
   metroFTAName: 
   metroFTAFileTypes: []
@@ -652,7 +657,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 6e5cd815-edcd-418d-a731-5d9826ad185a
-  projectName: 
+  projectName: HandTrackingTest
   organizationId: guigermano
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
