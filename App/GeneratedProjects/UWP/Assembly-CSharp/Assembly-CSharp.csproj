@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4893B2DD-87DE-4D13-B60A-4B669BB412D6}</ProjectGuid>
+    <ProjectGuid>{B820F967-17CA-4AAE-80C1-3FB16D26C270}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -360,6 +360,9 @@
     <SDKReference Include="WindowsTeam, Version=10.0.17134.0" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(UnityProjectDir)Assets\CollisionBehaviour.cs">
+      <Link>CollisionBehaviour.cs</Link>
+    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs">
       <Link>HoloToolkit\Boundary\Scripts\BoundaryManager.cs</Link>
     </Compile>
